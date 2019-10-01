@@ -32,7 +32,7 @@ DF4$correct <- ifelse(DF4$correct == TRUE, 1,
 #11.
 DF5 <- DF4 %>% group_by(hash, lesson_name) %>% summarise(mean.correct = mean(correct, na.rm = TRUE))
 
-# Extra Credit
+# Extra Credit (still need to figure out)
 
 DF6 <- select(DF1, correct, datetime)
 
